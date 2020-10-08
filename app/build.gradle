@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.lg_animal"
-        minSdkVersion 29
+        minSdkVersion 28
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -20,14 +20,54 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
+    }
+
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
+    //Setting
+    implementation 'androidx.preference:preference:1.1.0'
+    // RichUtils
+    implementation 'com.github.WindSekirun:RichUtilsKt:2.2.5'
+    // OKHTTP
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    // KAKAO SDK
+    implementation 'com.kakao.sdk:usermgmt:1.11.1'
+    // Facebook SDK
+    implementation 'com.facebook.android:facebook-android-sdk:4.33.0'
+    // Twitter SDK
+    implementation 'com.twitter.sdk.android:twitter:3.3.0'
+    // GOOGLE SDK
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+    // firebase
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
 }
