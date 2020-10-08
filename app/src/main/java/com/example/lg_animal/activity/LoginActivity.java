@@ -65,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        setting_button.performClick();
     }
 
     private void attemptLogin() {

@@ -56,53 +56,18 @@ public class PlaceholderFragment extends Fragment {
         switch (pageViewModel.getIndex().getValue()){
             case 0:
                 root = inflater.inflate(R.layout.fragment_main_1, container, false);
-                final TextView textView = root.findViewById(R.id.section_label);
-                pageViewModel.getText().observe(this, new Observer<String>() {
-                    @Override
-                    public void onChanged(@Nullable String s) {
-                        textView.setText(s);
-                    }
-                });
                 break;
             case 1:
                 root = inflater.inflate(R.layout.fragment_main_2, container, false);
-
                 break;
             case 2:
-
                 root = inflater.inflate(R.layout.fragment_main_3, container, false);
                 break;
             case 3:
-                root = inflater.inflate(R.layout.fragment_main_4, container, false);
-                getActivity().getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.settings, new SettingsFragment())
-                        .commit();
-                break;
             default:
-                root = inflater.inflate(R.layout.fragment_main_1, container, false);
+                root = inflater.inflate(R.layout.fragment_main_4, container, false);
                 break;
         }
         return root;
-    }
-
-    public static class SettingsFragment extends PreferenceFragmentCompat {
-        @Override
-        public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-            setPreferencesFromResource(R.xml.root_preferences, rootKey);
-
-            EditTextPreference signaturePreference = findPreference(getString(R.string.etpf_key_title1));
-            if (signaturePreference != null) {
-                signaturePreference.setVisible(true);
-                Log.d("", "signaturePreference.getText() " + signaturePreference.getText());
-            }
-
-
-            ListPreference listPreference = findPreference(getString(R.string.list_key_1));
-            if (signaturePreference != null) {
-                listPreference.setVisible(true);
-                Log.d("", "listPreference.getValue() " + listPreference.getValue());
-            }
-        }
     }
 }

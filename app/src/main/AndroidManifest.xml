@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".activity.JoinActivity" />
         <activity android:name=".activity.CameraActivity"/>
-        <activity android:name=".activity.SettingMainActivity"/>
+        <activity android:name=".activity.SettingMainActivity"
+            android:theme="@style/noActionbar"/>
     </application>
 
 </manifest>

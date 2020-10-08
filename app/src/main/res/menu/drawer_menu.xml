@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/drawer_item_info_setting"
+        android:icon="@drawable/ic_drawer_user"
+        android:title="@string/drawer_info_setting" />
+
+    <item android:id="@+id/drawer_item_pet_setting"
+        android:icon="@drawable/ic_drawer_pet"
+        android:title="@string/drawer_pet_setting" />
+
+    <item android:id="@+id/drawer_item_module_setting"
+        android:icon="@drawable/ic_drawer_module"
+        android:title="@string/drawer_module_setting" />
+
+    <item android:id="@+id/drawer_item_walk_info"
+        android:icon="@drawable/ic_drawer_walk"
+        android:title="@string/drawer_walk_info" />
+
+    <item android:id="@+id/drawer_item_report"
+        android:icon="@drawable/ic_drawer_report"
+        android:title="@string/drawer_report" />
+
+    <item android:id="@+id/drawer_item_app_info"
+        android:icon="@drawable/ic_drawer_app_info"
+        android:title="@string/drawer_app_info" />
+
+    <item android:id="@+id/drawer_item_home_setting"
+        android:icon="@drawable/ic_drawer_home_setting"
+        android:title="@string/drawer_my_home_setting" />
+
+</menu>
