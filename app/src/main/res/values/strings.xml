@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RobotVacuumCleaner</string>
+    <string name="app_name">PetManager</string>
     <string name="lg_email">이메일</string>
     <string name="lg_password">비밀번호</string>
     <string name="lg_login">로그인</string>
