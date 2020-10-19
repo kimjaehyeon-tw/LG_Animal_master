@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lg_animal">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +23,23 @@
         <activity android:name=".activity.CameraActivity"/>
         <activity android:name=".activity.SettingMainActivity"
             android:theme="@style/noActionbar"/>
+        <activity android:name=".activity.RoutineSettingActivity"
+            android:theme="@style/noActionbar"/>
+        <activity android:name=".activity.PetRegisterActivity"
+            android:theme="@style/noActionbar"/>
+        <activity android:name=".activity.PetManagerActivity"
+            android:theme="@style/noActionbar"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.lg_animal"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/pet_img_camera" />
+        </provider>
     </application>
 
 </manifest>

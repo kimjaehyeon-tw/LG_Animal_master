@@ -31,6 +31,7 @@
     <!-- key -->
     <string name="etpf_key_title1">etpf_key_title1</string>
     <string name="list_key_1">list_key_1</string>
+    <string name="pet_info_intent_key">pet_info_intent_key</string>
 
     <!-- tool bar menu  -->
     <string name="actionbar_search">Search</string>
@@ -44,5 +45,54 @@
     <string name="drawer_report">리포트</string>
     <string name="drawer_app_info">앱 정보</string>
     <string name="drawer_my_home_setting">집 등록/해제</string>
+
+    <!-- pet -->
+    <string name="pet_name">이름</string>
+    <string name="pet_age">나이</string>
+    <string name="pet_gender">성별</string>
+    <string name="pet_gender_unit_0">수컷</string>
+    <string name="pet_gender_unit_1">암컷</string>
+    <string name="pet_kind">품종</string>
+    <string name="pet_weight">몸무게</string>
+    <string name="pet_weight_unit">kg</string>
+    <string name="pet_health">건강상태</string>
+    <string name="pet_info_text">펫 정보</string>
+    <string name="pet_health_ok">좋음</string>
+    <string name="pet_health_caution">주의</string>
+    <string name="pet_health_not">나쁨</string>
+
+    <!-- routine -->
+    <string name="routine_weight">체중, BCS</string>
+    <string name="routine_activity">활동</string>
+    <string name="routine_food">급식</string>
+    <string name="routine_water">급수</string>
+
+    <!-- general -->
+    <string name="btn_text_settings">설정</string>
+    <string name="btn_text_ok">확인</string>
+    <string name="btn_text_cancel">취소</string>
+
+    <!-- pet, user manager -->
+    <string name="pet_account_title">펫 등록</string>
+    <string name="pet_account_sub_title_name">펫 이름</string>
+    <string name="pet_account_sub_title_gender">펫 성별</string>
+    <string name="pet_account_sub_title_number">동물 등록 번호</string>
+    <string name="pet_account_sub_title_age">펫 나이</string>
+    <string name="pet_account_sub_title_weight">몸무게</string>
+    <string name="pet_account_sub_title_bcs">BCS</string>
+    <string name="pet_account_sub_title_kind">품종</string>
+    <string name="pet_account_cancel_message">펫을 하나 이상 등록 하여야 합니다.</string>
+    <string name="pet_account_name_value_null">이름을 적어주세요.</string>
+    <string name="pet_account_gender_value_null">성별을 선택해 주세요.</string>
+    <string name="pet_account_number_value_null">동물 등록번호를 적어주세요.</string>
+    <string name="pet_account_number_value_age">나이를 적어주세요.</string>
+    <string name="pet_account_number_value_weight">몸무게를 적어주세요.</string>
+    <string name="pet_account_number_value_bcs">비만도를 적어주세요.</string>
+    <string name="pet_account_number_value_kind">품종을 적어주세요.</string>
+    <string name="pet_account_picture_value_null">펫 사진을 찍어주세요.</string>
+    <string name="pet_account_success">펫 등록에 성공하였습니다.</string>
+    <string name="pet_account_gender_select">클릭하셔서 성별을 선택해주세요.</string>
+    <string name="pet_account_info_check_msg">정보를 다시 확인해주세요.</string>
+    <string name="pet_account_info_success_msg">펫 정보가 모두 정확한가요?</string>
 
 </resources>

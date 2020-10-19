@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.lg_animal.R;
+import com.example.lg_animal.data.PetInfoSharedPreference;
 import com.example.lg_animal.sociallogin.SocialLogin;
 import com.example.lg_animal.sociallogin.impl.OnResponseListener;
 import com.example.lg_animal.sociallogin.impl.ResultType;
@@ -61,8 +62,14 @@ public class LoginActivity extends AppCompatActivity {
         setting_button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SettingMainActivity.class);
-                startActivity(intent);
+                if (PetInfoSharedPreference.getInt(LoginActivity.this,"pet_number") == 0) {
+                    Intent intent = new Intent(getApplicationContext(), PetRegisterActivity.class);
+                    startActivity(intent);
+                } else {
+                    Intent intent = new Intent(getApplicationContext(), SettingMainActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
         setting_button.performClick();
